@@ -1,0 +1,16 @@
+[package]
+name = "axum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+github = { path = "../../crates/providers/github"}
+core-lib = { path = "../../crates/core"}
+axum = "0.8.3"
+axum-extra = { version="0.10.1", features = ["cookie"] }
+serde = { version = "1.0.219", features = ["derive"] }
+tokio = { version = "1.44.2", features = ["macros", "rt-multi-thread"] }
+cookie = "0.18.1"
+dotenv = "0.15.0"
+jsonwebtoken = "9.3.1"
+chrono = "0.4.40"

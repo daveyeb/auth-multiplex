@@ -1,0 +1,24 @@
+[package]
+name = "core-lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = {version = "0.4.40", features = ["serde"] }
+async-trait = "0.1.88"
+governor = { version = "0.10.0", features = ["std"] }
+lru = "0.14.0"
+thiserror = "2.0.12"
+dashmap = "6.1.0"
+aes = "0.8.4"
+aes-gcm = "0.10.3"
+base64 = "0.22.1"
+rand = "0.9.0"
+serde = { version = "1.0.219", features = ["derive"] }
+
+
+
+[dev-dependencies]
+futures = "0.3.31"
+hex-literal = "0.4.1"
+

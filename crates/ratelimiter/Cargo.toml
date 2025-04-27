@@ -1,0 +1,16 @@
+[package]
+name = "ratelimiter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+core-lib = { path = "../core"}
+dashmap = "6.1.0"
+async-trait = "0.1.88"
+governor = { version = "0.10.0", features = ["std"] }
+tokio = { version = "1.44.2", features = ["full"] }
+thiserror = "2.0.12"
+
+
+[dev-dependencies]
+futures = "0.3.31"

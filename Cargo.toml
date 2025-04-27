@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2" 
+members = ["crates/core"
+ , "crates/providers/github", "crates/ratelimiter", "crates/store", "examples/axum"]
+
+# Top-level README.md and .gitignore will be added manually
